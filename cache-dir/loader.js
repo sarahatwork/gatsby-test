@@ -367,7 +367,7 @@ const queue = {
       })
       getResourceModule(page.jsonName, (err, j) => {
         if (err) {
-          console.log(err)
+          console.log(page, j)
           handleResourceLoadError(
             page.path,
             `Loading the JSON for ${page.path} failed`
